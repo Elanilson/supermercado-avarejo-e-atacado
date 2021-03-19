@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_produtos">
+
+    <fragment
+        android:id="@+id/nav_produtos"
+        android:name="com.apkdoandroid.supermercadovarejoeatacado.fragments.ProdutosFragment"
+        android:label="@string/produtos"
+        tools:layout="@layout/fragment_produtos" />
+
+    <fragment
+        android:id="@+id/nav_ofertas"
+        android:name="com.apkdoandroid.supermercadovarejoeatacado.fragments.OfertasFragment"
+        android:label="@string/ofertas"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/nav_minhaLista"
+        android:name="com.apkdoandroid.supermercadovarejoeatacado.fragments.MinhaListaFragment"
+        android:label="@string/minhaLista"
+        tools:layout="@layout/fragment_minha_lista" />
+
+    <fragment
+        android:id="@+id/nav_lojas"
+        android:name="com.apkdoandroid.supermercadovarejoeatacado.fragments.LojasFragment"
+        android:label="@string/lojas"
+        tools:layout="@layout/fragment_lojas" />
+</navigation>

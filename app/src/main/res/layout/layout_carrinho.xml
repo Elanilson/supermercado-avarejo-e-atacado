@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_carrinho"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxSelecaoProdutoCarrinho"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/vermelho"
+            android:checked="true"
+            android:clickable="false"
+            android:shadowColor="@color/black"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/amarelo"
+            android:theme="@style/Theme.checkBoxCustom"
+            app:useMaterialThemeColors="false" />
+        <!--            android:background="@color/vermelho"-->
+
+        <ImageView
+            android:id="@+id/imageViewImagemProdutoCarrinho"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTituloProdutoCarrinho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Titulo"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPrecoProdutoCarrinho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="R$: 4.99"
+                android:textColor="@color/vermelho"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center|center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonMenosProdutoCarrinho"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/background_caixa"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/gray"
+                    app:backgroundTintMode="src_in" />
+
+                <EditText
+                    android:id="@+id/editQuantidadeProdutoCarrinho"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/background_caixa"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:text="0"
+                    android:textColor="@color/vermelho"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/buttonMaisProdutoCarrinho"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/background_caixa"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:backgroundTint="@color/gray"
+                    app:backgroundTintMode="src_in" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
